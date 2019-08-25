@@ -1,0 +1,6 @@
+create_table("season_tags") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("season_id", "uuid", {})
+	t.Column("tag_id", "uuid", {})
+	t.Timestamps()
+}

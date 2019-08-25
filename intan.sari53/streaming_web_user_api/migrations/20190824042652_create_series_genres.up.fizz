@@ -1,0 +1,6 @@
+create_table("series_genres") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("series_id", "uuid", {})
+	t.Column("genre_id", "uuid", {})
+	t.Timestamps()
+}

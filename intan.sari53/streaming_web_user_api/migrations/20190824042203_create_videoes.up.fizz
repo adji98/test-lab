@@ -1,0 +1,11 @@
+create_table("videoes") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("title", "string", {})
+	t.Column("plot", "string", {})
+	t.Column("synopsis", "string", {})
+	t.Column("length", "int", {})
+	t.Column("view_count", "int", {})
+	t.Column("like_count", "int", {})
+	t.Column("dislike_count", "int", {})
+	t.Timestamps()
+}

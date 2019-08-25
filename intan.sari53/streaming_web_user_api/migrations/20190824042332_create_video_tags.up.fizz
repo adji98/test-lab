@@ -1,0 +1,6 @@
+create_table("video_tags") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("video_id", "uuid", {})
+	t.Column("tag_id", "uuid", {})
+	t.Timestamps()
+}

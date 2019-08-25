@@ -1,0 +1,9 @@
+create_table("seasons") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("series_id", "uuid", {})
+	t.Column("season_no", "integer", {})
+	t.Column("plot", "string", {null: true})
+	t.Column("completed", "bool", {})
+	t.Column("episode_count", "integer", {})
+	t.Timestamps()
+}

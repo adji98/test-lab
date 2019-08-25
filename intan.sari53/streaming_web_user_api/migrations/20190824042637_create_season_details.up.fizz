@@ -1,0 +1,7 @@
+create_table("season_details") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("season_id", "uuid", {})
+	t.Column("video_id", "uuid", {})
+	t.Column("episode_no", "integer", {})
+	t.Timestamps()
+}

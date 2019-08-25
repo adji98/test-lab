@@ -1,0 +1,9 @@
+create_table("video_views") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("video_id", "uuid", {})
+	t.Column("quality_id", "uuid", {})
+	t.Column("user_id", "uuid", {})
+	t.Column("completed", "bool", {})
+	t.Column("paused_on", "integer", {})
+	t.Timestamps()
+}
